@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Supply Co.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body class="body">
+    <header>
+        <h1 id="title">Sketch Supply Co.</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="locations.html">Locations</a>
+        </nav>
+    </header>
+
+    <div id="jumbotron">
+        Streetwear for Creators
+    </div>
+
+    <div class="content">
+        <h2>New Arrivals</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://i.pinimg.com/originals/24/f1/9a/24f19adc66edd5ea8fff8dea3b88400a.jpg" alt="Sketch Tee">
+                <h3>Sketch Tee</h3>
+                <p>$25.00</p>
+            </div>
+            <div class="product">
+                <img src="https://i.etsystatic.com/26422871/r/il/04f074/4466109509/il_fullxfull.4466109509_jq7e.jpg" alt="Sketch Hoodie">
+                <h3>Hoodie Drop</h3>
+                <p>$45.00</p>
+            </div>
+            <div class="product">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.4cqvj62NKmuXr_YCdhaaMQAAAA&rs=1&pid=ImgDetMain" alt="Sketch Beanie">
+                <h3>Sketch Shoes</h3>
+                <p>$18.00</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Sketch Supply. All rights reserved.</p>
+    </footer>
+    <script>
+        window.onload = function () {
+          var jumbotron = document.getElementById('jumbotron');
+      
+          var images = [
+            'images/Streetwear1.webp',
+            'images/Streetwear2.jpg',
+            'images/Streetwear3.jpg',
+            'images/Streetwear4.avif',
+            'images/Streetwear5.webp',
+          ];
+      
+          let index = 0;
+      
+          function changeBackground() {
+            jumbotron.style.backgroundImage = `url('${images[index]}')`;
+            index = (index + 1) % images.length;
+          }
+      
+          // Initial load
+          changeBackground();
+      
+          // Change every 5 seconds
+          setInterval(changeBackground, 5000);
+        };
+      </script>
+</body>
+</html>
