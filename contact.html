@@ -3,23 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Page Title</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Contact | Sketch Supply</title>
+  <style>
+    .contact-wrapper {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .contact-wrapper h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-wrapper p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    .contact-form button {
+      background-color: #111;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #333;
+    }
+
+    .social-links a {
+      margin: 0 15px;
+      font-size: 1.5rem;
+      color: #111;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #555;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Your Website</h1>
+    <h1 id="title">Sketch Supply Co.</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="locations.html">Locations</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Main Section</h2>
-      <p>This is a paragraph inside the main section.</p>
-    </section>
-  </main>
+  <div class="contact-wrapper">
+    <h2>Get in Touch</h2>
+    <p>Have questions, feedback, or just want to say what’s up? Drop us a message below — we’d love to hear from you!</p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <form action="submit_form.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <p>Follow us on our socials for updates, drops, and more:</p>
+      <a href="https://www.instagram.com/sketchsupply" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@sketchsupply" target="_blank">TikTok</a>
+      <a href="https://twitter.com/sketchsupply" target="_blank">Twitter</a>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>2025 Sketch Supply. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>

@@ -3,23 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Your Page Title</title>
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to Your Website</h1>
+    <h1 id="title">Sketch Supply Co.</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="locations.html">Locations</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Main Section</h2>
-      <p>This is a paragraph inside the main section.</p>
-    </section>
-  </main>
+  <div class="locations-wrapper">
+    <!-- Intro Section -->
+    <h2>Our Home Base</h2>
+    <p>Come see where the vision comes to life. Sketch Supply is rooted in the heart of Des Moines — our creative HQ, warehouse, and local pickup spot.</p>
+
+    <!-- Store Info Section -->
+    <div class="store-info">
+      <h3>Visit Us</h3>
+      <p><strong>Address:</strong> 218 4th St, Des Moines, IA 50309</p>
+      <p><strong>Store Hours:</strong><br>
+         Mon–Fri: 11am – 6pm<br>
+         Sat: 12pm – 5pm<br>
+         Sun: Closed</p>
+      <p><strong>Phone:</strong> (515) 555-1234</p>
+    </div>
+
+    <!-- Coming Soon Section -->
+    <div class="coming-soon">
+      <h3>More Locations Coming Soon 👀</h3>
+      <p>We’re growing fast. Stay tuned for pop-ups and future shops in other cities!</p>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5968.474801040835!2d-93.62486632326359!3d41.585746671275366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ee990072288897%3A0x4a794c58c8b4b756!2s218%204th%20St%2C%20Des%20Moines%2C%20IA%2050309!5e0!3m2!1sen!2sus!4v1745594222694!5m2!1sen!2sus" 
+        allowfullscreen 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <img src="https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=DjUotJFqnCOUrB3G5nrjtg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=250.8755&pitch=0&thumbfov=100" alt="Street View of our location">
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="cta">
+      <a href="shop.html">Check Out the Latest Drop</a>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>2025 Sketch Supply. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
